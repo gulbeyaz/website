@@ -60,9 +60,16 @@
 </template>
 
 <script setup lang="ts">
+import type { RegisterForm } from '~/types/auth';
+
 const authStore = useAuthStore();
-const registerInput = authStore.RegisterInput;
 const loading = authStore.Loading;
+
+const registerInput = reactive<RegisterForm>({
+	username: '',
+	password: '',
+	confirmPassword: '',
+});
 
 definePageMeta({
 	layout: 'auth',

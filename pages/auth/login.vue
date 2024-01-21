@@ -52,9 +52,14 @@
 </template>
 
 <script setup lang="ts">
+import type { LoginForm } from '~/types/auth';
+
 const authStore = useAuthStore();
-const loginInput = authStore.LoginInput;
 const loading = authStore.Loading;
+const loginInput = reactive<LoginForm>({
+	username: '',
+	password: '',
+});
 
 definePageMeta({
 	layout: 'auth',

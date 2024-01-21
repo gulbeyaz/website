@@ -9,19 +9,10 @@ export const useAuthStore = defineStore(
 			refreshToken: '',
 			user: {} as User,
 		});
-		const RegisterInput = reactive<RegisterForm>({
-			username: '',
-			password: '',
-			confirmPassword: '',
-		});
-		const LoginInput = reactive<LoginForm>({
-			username: '',
-			password: '',
-		});
 
 		const isAuthenticated = () => !!AuthStore.accessToken;
 
-		return { Loading, AuthStore, RegisterInput, LoginInput, isAuthenticated };
+		return { Loading, AuthStore, isAuthenticated };
 	},
 	{
 		persist: true,
