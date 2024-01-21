@@ -22,7 +22,13 @@
 						v-model="loginInput.password"
 					/>
 				</UFormGroup>
-				<UButton class="mt-10" size="xl" block label="Login" :loading="false" />
+				<UButton
+					class="mt-10"
+					size="xl"
+					block
+					label="Login"
+					:loading="loading"
+				/>
 			</UForm>
 		</UCard>
 	</div>
@@ -30,8 +36,8 @@
 
 <script setup lang="ts">
 const authStore = useAuthStore();
-
-const loginInput = authStore.loginInput;
+const loginInput = authStore.LoginInput;
+const loading = authStore.Loading;
 
 definePageMeta({
 	layout: 'auth',

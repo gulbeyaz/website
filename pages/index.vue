@@ -1,3 +1,3 @@
 <template>
-	<div>İndex</div>
+	<div>Index</div>
 </template>

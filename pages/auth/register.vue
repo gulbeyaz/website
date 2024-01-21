@@ -35,7 +35,7 @@
 					size="xl"
 					block
 					label="Register"
-					:loading="false"
+					:loading="loading"
 				/>
 			</UForm>
 		</UCard>
@@ -44,8 +44,8 @@
 
 <script setup lang="ts">
 const authStore = useAuthStore();
-
-const registerInput = authStore.registerInput;
+const registerInput = authStore.RegisterInput;
+const loading = authStore.Loading;
 
 definePageMeta({
 	layout: 'auth',
