@@ -1,5 +1,3 @@
 <template>
-	<div>
-		<UButton>Button</UButton>
-	</div>
+	<div>İndex</div>
 </template>
