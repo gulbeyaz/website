@@ -38,6 +38,15 @@
 					:loading="loading"
 				/>
 			</UForm>
+			<template #footer>
+				<UButton
+					icon="i-heroicons-arrow-left-solid"
+					label="You have an account ? Login"
+					to="/auth/login"
+					variant="link"
+					class="pl-0"
+				/>
+			</template>
 		</UCard>
 	</div>
 </template>

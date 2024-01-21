@@ -30,6 +30,15 @@
 					:loading="loading"
 				/>
 			</UForm>
+			<template #footer>
+				<UButton
+					icon="i-heroicons-arrow-left-solid"
+					label="You don't have an account ? Register"
+					to="/auth/register"
+					variant="link"
+					class="pl-0"
+				/>
+			</template>
 		</UCard>
 	</div>
 </template>
