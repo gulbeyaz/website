@@ -4,7 +4,5 @@ export default defineNuxtRouteMiddleware((to) => {
 
 	if (isAuthenticated() && layout === 'auth') {
 		return navigateTo('/');
-	} else {
-		console.log(isAuthenticated());
 	}
 });

@@ -2,7 +2,15 @@
 	<div class="flex justify-center">
 		<UCard class="mt-20 w-[500px]">
 			<template #header>
-				<span>Login</span>
+				<div class="flex justify-between">
+					<span>Login</span>
+					<UButton
+						icon="i-heroicons-home"
+						label="Go back home"
+						to="/"
+						variant="link"
+					/>
+				</div>
 			</template>
 
 			<UForm :state="loginInput" class="space-y-5">
