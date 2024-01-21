@@ -16,7 +16,18 @@ export default defineNuxtConfig({
 	},
 
 	devtools: { enabled: true },
-	modules: ['@nuxt/ui', '@pinia/nuxt', '@pinia-plugin-persistedstate/nuxt'],
+	modules: [
+		'@nuxt/ui',
+		'@pinia/nuxt',
+		'@pinia-plugin-persistedstate/nuxt',
+		'@nuxtjs/google-fonts',
+	],
+	googleFonts: {
+		families: {
+			'Moirai One': true,
+		},
+		outputDir: 'assets',
+	},
 	pinia: {
 		storesDirs: ['./stores/**'],
 	},
