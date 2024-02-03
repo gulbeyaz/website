@@ -1,9 +1,12 @@
 <template>
-	<header>
+	<header class="h-12">
 		<span class="logo">Gulbeyaz</span>
-		<SlideoverButton />
+		<SlideoverButton v-if="authStore.isAuthenticated()" />
 	</header>
 </template>
+<script setup lang="ts">
+const authStore = useAuthStore();
+</script>
 
 <style scoped>
 header {

@@ -1,5 +1,5 @@
-export const useSlideOver = defineStore('slideOver', () => {
-	const isSlideOverOpen = ref(false);
+export const useSlideOverStore = defineStore('slideOver', () => {
+	const isOpen = ref<boolean>(false);
 
-	return isSlideOverOpen;
+	return { isOpen };
 });
